@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoryActivity">
+
+    <Button
+        android:id="@+id/choice2Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/choice1Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/choice2Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/choice1Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/storyImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/page0"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/storyImageView"
+                tools:text=" Lorem ipsum dolor sit amet, justo purus sit sed duis, libero semper viverra a. Sit ligula proin aspernatur luctus consequatur. Eget orci sit praesent morbi justo tortor, eleifend a tellus urna tincidunt, luctus amet. Felis iaculis at luctus. Conubia mauris non amet, pellentesque eget consectetuer at, nec vivamus et non sed, at et dolor nisl ut quis pulvinar. Cras ultricies nullam elit vehicula, amet consectetuer imperdiet dolores id vel, adipiscing dui at primis lacus nunc, cursus nunc interdum dictumst, varius lorem.  Placerat consectetuer posuere sollicitudin egestas elit, duis vestibulum quis vel nec integer, interdum laoreet faucibus illum. A porta, sed nulla est non ac vitae, vitae quam aliquam, wisi habitasse. Amet in nostrud, leo sit vitae penatibus ultricies cum id, enim et felis pellentesque enim volutpat libero, integer diam ullamcorper lacus nec vitae. Odio quam vitae elit lorem diam luctus, purus nec massa felis. Molestie proin rhoncus at purus, in atque, odio morbi eu vestibulum architecto porta eu.  Pretium quam sapien orci, nam sed aliquet duis, in metus inceptos vel, lorem penatibus mauris diam ante vulputate fermentum, at vestibulum corporis iaculis lectus duis. Massa a cursus sapien, dui ut, pellentesque ac, ut odio pharetra purus odio. In quis a ad in, nulla morbi sem arcu pellentesque porttitor vestibulum, risus luctus mauris rerum tortor, pellentesque et vestibulum, enim placerat placerat sit leo ut. In cras nec dictum non hac fermentum, hac fusce amet. Dolor in ultricies, molestie a vitae mi quisque, fusce nunc omnis nisl arcu sit. Consequat a sit aliquam, venenatis ornare eaque, ante justo nec neque feugiat ipsum etiam, libero scelerisque porta, mi montes et nibh. Maecenas elit odit sed tristique non, aliquam arcu sit phasellus nibh a, volutpat vitae. Aliquet molestiae imperdiet dolor varius, velit imperdiet."/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
